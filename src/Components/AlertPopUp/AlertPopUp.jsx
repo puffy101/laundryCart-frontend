@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from 'react-router-dom'
 import "./AlertPopUp.css";
 import danger from "./danger.PNG";
 
@@ -32,10 +33,13 @@ export default function AlertPopUp() {
                 Are you sure want to cancel the Order No:ORD1
               </p>
             </div>
-            <a href="/home"><button className="alert_btn" onClick={toggleModal}>
-              Proceed
-            </button>
-            </a>
+               <Link to="/home">
+                   <button className="alert_btn" onClick={toggleModal}> Proceed</button>
+               </Link>
+//             <a href="/home"><button className="alert_btn" onClick={toggleModal}>
+//               Proceed
+//             </button>
+//             </a>
           </div>
         </div>
       )}
