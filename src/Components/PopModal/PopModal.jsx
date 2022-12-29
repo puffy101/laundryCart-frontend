@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
+import { Link } from 'react-router-dom'
 import "./PopModal.css";
 import tickimage from "./tick-image.png";
 
@@ -31,12 +32,12 @@ const PopModal = (props) => {
             <p className="modal_para">
               you can track the delivery in the "Orders" section.
             </p>
-            <a href="/home">
-              {" "}
-              <button className="close-modal" onClick={toggleModal1}>
+             <Link to="/home">
+                {" "}
+                <button className="close-modal" onClick={toggleModal1}>
                 Go to Orders
-              </button>
-            </a>
+               </button>
+            </Link>
           </div>
         </div>
       )}
