@@ -36,10 +36,6 @@ export default function AlertPopUp() {
                <Link to="/home">
                    <button className="alert_btn" onClick={toggleModal}> Proceed</button>
                </Link>
-//             <a href="/home"><button className="alert_btn" onClick={toggleModal}>
-//               Proceed
-//             </button>
-//             </a>
           </div>
         </div>
       )}
