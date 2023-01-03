@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom'
 import "./AlertPopUp.css";
-import danger from "./danger.PNG";
+import danger from "./danger.png";
 
 export default function AlertPopUp() {
   const [modal, setModal] = useState(false);
